@@ -4721,3 +4721,227 @@ zd-summary-block {
 [dir=rtl] zd-summary-block {
   border-right-color: #859fa1;
 }
+
+/***** START NOUSMEDIS CUSTOM CSS *****/
+/*primero importamos font-awesome desde la carpeta de assets*/
+@font-face {
+ font-family: 'FontAwesome';
+ src: local ('FontAwesome');
+ src: url('$assets-fa-regular-400-woff2'),
+      url('$assets-fa-regular-400-ttf');
+ font-weight: 400;
+ font-style: regular;
+}
+/*note*/
+.article-body div.note {
+    background-color: rgb(245 247 249);
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: rgb(70 125 149);
+    border-left-width: 5px;
+    border-left-style: solid;
+    color: #06363C;
+    position: relative;
+    padding-left: 45px;
+    line-height: 1.3rem;
+}
+
+.article-body div.note::before {
+    font-family: 'FontAwesome';
+    content: "\f0f3"; /* bell */
+    font-size:1.3rem;
+    color: rgb(70 125 149);
+    position: absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align:top;
+}
+
+.article-body div.note strong{
+   color: rgb(70 125 149);
+}
+
+/*note.tip*/
+.article-body div.note.tip {
+    background-color: rgb(234 246 240);
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: rgb(59 134 78);
+    border-left-width: 5px;
+    border-left-style: solid;
+    color: #06363C;
+    position: relative;
+    padding-left: 45px;
+    line-height: 1.3rem;
+}
+
+.article-body div.note.tip::before {
+    font-family: 'FontAwesome';  
+    content: "\f0a6"; /* hand-point-up */
+    font-size:1.3rem;
+    color: rgb(59 134 78);
+    position: absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align:top;
+}
+
+.article-body div.note.tip strong{
+   color: rgb(59 134 78);
+}
+
+/*note.warning*/
+.article-body div.note.warning {
+    background-color: rgb(246 231 230);
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: rgb(195 73 68);
+    border-left-width: 5px;
+    border-left-style: solid;
+    color: #06363C;
+    position: relative;
+    padding-left: 45px;
+    line-height: 1.3rem;
+}
+
+.article-body div.note.warning::before {
+    font-family: 'FontAwesome';
+    content: "\f256"; /* hand */
+    font-size:1.3rem;
+    color: rgb(195 73 68);
+    position: absolute;
+    position: absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align:top;
+}
+
+.article-body div.note.warning strong{
+   color: rgb(195 73 68);
+}
+
+/*note.important*/
+.article-body div.note.important {
+    background-color: rgb(254 251 236);
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: rgb(233 199 70);
+    border-left-width: 5px;
+    border-left-style: solid;
+    color: #06363C;
+    position: relative;
+    padding-left: 45px;
+    line-height: 1.3rem;
+}
+
+.article-body div.note.important::before {
+    font-family: 'FontAwesome';  
+    content: "\f024"; /* flag */   
+    font-size:1.3rem;
+    color: rgb(233 199 70);
+    position: absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align:top;
+}
+
+.article-body div.note.important strong{
+   color: rgb(233 199 70);
+}
+
+/*CSS for codigo and underline*/
+
+.article-body .codigo{
+    background-color: #f5f5f5; /* Light grey background */
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace; /* Monospaced font */
+    padding: 2px 4px; /* Padding around the text */
+    border-radius: 6px; /* Rounded corners */
+}
+
+.article-body .wysiwyg-underline{
+    background-color: #f5f5f5; /* Light grey background */
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace; /* Monospaced font */
+    padding: 2px 4px; /* Padding around the text */
+    border-radius: 6px; /* Rounded corners */
+    text-decoration:none;
+}
+
+/**CUSTOM CSS FOR HOME**/
+.blocks-item-title{
+  font-size:1.5rem;
+  font-weight:bold;
+}
+.category-container .category-content .page-header-description{
+  flex-basis:45%;
+  display:none;
+}
+
+/**BOTONES PAGINA INICIO**/
+.categories .blocks-list .blocks-item{
+  border-radius:4rem;
+}
+
+/**CSS para el árbol de secciones**/
+.section-tree .section .article-list .article-list-item, .section-content .article-list .article-list-item, .article-list-item a{
+  padding:3px 0;
+  color:#00BF80;
+}
+
+.section-tree .section .section-tree-title{
+  margin-top:5px;
+}
+
+/**CSS para el árbol de secciones lateral en la vista de articulo**/
+a.sidenav-item{
+  margin-bottom:0px;
+  margin-top:6px;
+}
+
+/**CSS para las tablas**/
+thead tr td{
+  font-weight: bold;
+  border-top: none;
+}
+
+td{
+  padding:0.5rem;
+}
+table{
+  border:none;
+}
+
+td:first-child {
+  border-left: none;
+}
+
+td:last-child {
+   border-right: none;
+}
+
+tbody tr:last-child td{
+  border-bottom:none;
+}
